@@ -9,6 +9,7 @@ import { singleSpaAngular, getSingleSpaExtraProviders } from 'single-spa-angular
 import { singleSpaPropsSubject } from './single-spa/single-spa-props';
 import {Subject, timer} from 'rxjs';
 import {share, switchMap} from 'rxjs/operators';
+import 'zone.js/dist/zone-patch-rxjs';
 
 if (environment.production) {
   enableProdMode();
